@@ -1,0 +1,40 @@
+{
+  "name": "vue-avatar-gradient",
+  "version": "1.0.1",
+  "description": "Generate beautiful gradient avatars for your Vue application.",
+  "main": "dist/avatar-gradient.umd.js",
+  "module": "dist/avatar-gradient.es.js",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "lint": "eslint --ext .js,.vue src"
+  },
+  "keywords": [
+    "vue",
+    "avatar",
+    "gradient",
+    "component",
+    "vue3"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adam-coquelet/vue-avatar-gradient.git"
+  },
+  "author": "Adam Coquelet",
+  "license": "MIT",
+  "peerDependencies": {
+    "vue": "^3.0.0",
+    "tinycolor2": "^1.4.2"
+  },
+  "dependencies": {
+    "tinycolor2": "^1.4.2"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "eslint": "^8.0.0"
+  }
+}
