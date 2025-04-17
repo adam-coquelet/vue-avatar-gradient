@@ -1,4 +1,4 @@
-name: 📦 Publish Package
+name: Publish Package
 
 on:
   push:
@@ -9,29 +9,29 @@ jobs:
   publish:
     if: github.repository == 'adam-coquelet/vue-avatar-gradient'
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: read
+      id-token: write
+    environment: Release
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js and authenticate to npm
+      - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: '20'
-          registry-url: 'https://registry.npmjs.org'
+          registry-url: 'https://registry.npmjs.org/'
           always-auth: true
-          publish-auth-token: ${{ secrets.NPM_PUBLISH_TOKEN }}
 
-      - name: Debug NPM auth (debug only)
-        run: |
-          npm config get registry
-          npm whoami
-          npm owner ls vue-avatar-gradient
+      - name: Install
+        run: npm ci
 
-      - name: Install deps & build
-        run: |
-          npm ci
-          npm run build
+      - name: Build
+        run: npm run build
+
+      - name: Set up NPM authentication
+        run: echo "//registry.npmjs.org/:_authToken=${{secrets.NPM_PUBLISH_TOKEN}}" > .npmrc
 
       - name: Publish to npm
         run: npm publish --access public
