@@ -1,4 +1,4 @@
-name: Publish Package
+name: 📦 Publish Package
 
 on:
   push:
@@ -9,32 +9,29 @@ jobs:
   publish:
     if: github.repository == 'adam-coquelet/vue-avatar-gradient'
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      id-token: write
-    environment: Release
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Setup Node.js and NPM registry
         uses: actions/setup-node@v3
         with:
           node-version: '20'
-          registry-url: 'https://registry.npmjs.org/'
+          registry-url: 'https://registry.npmjs.org'
           always-auth: true
+          publish-auth-token: ${{ secrets.NPM_PUBLISH_TOKEN }}
 
-      - name: Authenticate to npm
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN_AUTOMATION }}
-        run: echo "🔑 Authentifié auprès de npm avec un automation token"
+      - name: Install deps & build
+        run: |
+          npm ci
+          npm run build
 
-      - name: Install
-        run: npm ci
-
-      - name: Build
-        run: npm run build
+      - name: Debug NPM before publish
+        run: |
+          npm config get registry
+          npm whoami
+          npm owner ls vue-avatar-gradient
 
       - name: Publish to npm
-        # Avec un automation token, npm ignore l’OTP même si la 2FA est activée.
         run: npm publish --access public
