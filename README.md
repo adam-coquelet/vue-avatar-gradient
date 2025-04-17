@@ -88,16 +88,10 @@ Add the `text` parameter:
 
 ## Development & Build
 
-- **Build:** Uses Vue CLI to produce ESM and UMD bundles:
+- **Build:** Uses Vite to produce ESM and UMD bundles:
 
   ```bash
   npm run build
-  ```
-
-- **Linting:** ESLint configured for `.js` and `.vue` files:
-
-  ```bash
-  npm run lint
   ```
 
 ---
