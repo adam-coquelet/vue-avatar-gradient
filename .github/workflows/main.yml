@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js and NPM registry
+      - name: Setup Node.js and authenticate to npm
         uses: actions/setup-node@v3
         with:
           node-version: '20'
@@ -22,16 +22,16 @@ jobs:
           always-auth: true
           publish-auth-token: ${{ secrets.NPM_PUBLISH_TOKEN }}
 
-      - name: Install deps & build
-        run: |
-          npm ci
-          npm run build
-
-      - name: Debug NPM before publish
+      - name: Debug NPM auth (debug only)
         run: |
           npm config get registry
           npm whoami
           npm owner ls vue-avatar-gradient
+
+      - name: Install deps & build
+        run: |
+          npm ci
+          npm run build
 
       - name: Publish to npm
         run: npm publish --access public
