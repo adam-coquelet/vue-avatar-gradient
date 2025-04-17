@@ -11,12 +11,20 @@ export default defineConfig({
         },
         rollupOptions: {
             external: ['vue'],
-            output: {
-                exports: 'named',
-                globals: {
-                    vue: 'Vue'
+            output: [
+                {
+                    format: 'es',
+                    entryFileNames: 'avatar.es.js',
+                    globals: { vue: 'Vue' }
+                },
+                {
+                    format: 'umd',
+                    name: 'Avatar',
+                    entryFileNames: 'avatar.umd.js',
+                    exports: 'named',
+                    globals: { vue: 'Vue' }
                 }
-            }
+            ]
         }
     }
 })
