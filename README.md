@@ -2,6 +2,9 @@
 # Vue Avatar Gradient ![](https://avatar.vercel.sh/TOKEN?size=20) ![](https://avatar.vercel.sh/leerob?size=20) ![](https://avatar.vercel.sh/vercel?size=20) ![](https://avatar.vercel.sh/party?size=20) ![](https://avatar.vercel.sh/edge?size=20)
 
 [![npm version](https://img.shields.io/npm/v/vue-avatar-gradient.svg)](https://www.npmjs.com/package/vue-avatar-gradient)
+[![](https://badgen.net/bundlephobia/min/vue-avatar-gradient)](https://badgen.net/bundlephobia/min/vue-avatar-gradient)
+[![](https://badgen.net/bundlephobia/dependency-count/vue-avatar-gradient?color=green)](https://badgen.net/bundlephobia/dependency-count/vue-avatar-gradient)
+[![](https://badgen.net/bundlephobia/tree-shaking/vue-avatar-gradient)](https://badgen.net/bundlephobia/tree-shaking/vue-avatar-gradient)
 
 Generate beautiful gradient avatars for your Vue application.
 
