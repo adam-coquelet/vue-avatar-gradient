@@ -1,5 +1,5 @@
 
-# Vue Avatar Gradient ![](https://avatar.vercel.sh/rauchg?size=20) ![](https://avatar.vercel.sh/leerob?size=20) ![](https://avatar.vercel.sh/vercel?size=20) ![](https://avatar.vercel.sh/party?size=20) ![](https://avatar.vercel.sh/edge?size=20)
+# Vue Avatar Gradient ![](https://avatar.vercel.sh/TOKEN?size=20) ![](https://avatar.vercel.sh/leerob?size=20) ![](https://avatar.vercel.sh/vercel?size=20) ![](https://avatar.vercel.sh/party?size=20) ![](https://avatar.vercel.sh/edge?size=20)
 
 Generate beautiful gradient avatars for your Vue application.
 
@@ -44,7 +44,7 @@ Provide a username to generate an avatar. Each name will generate a unique avata
 <Avatar token="TOKEN"/>
 ```
 
-![Avatar for rauchg](https://avatar.vercel.sh/TOKEN)
+![Avatar for TOKEN](https://avatar.vercel.sh/TOKEN)
 
 
 
@@ -54,14 +54,14 @@ Provide a username to generate an avatar. Each name will generate a unique avata
 <Avatar token="TOKEN" :round="60"/>
 ```
 
-![Avatar for rauchg](https://avatar.vercel.sh/TOKEN?rounded=60)
+![Avatar for TOKEN](https://avatar.vercel.sh/TOKEN?rounded=60)
 
 
 ### Custom Size
 ```html
 <Avatar token="TOKEN" :size="30"/>
 ```
-![Avatar for rauchg](https://avatar.vercel.sh/rauchg.svg?size=30)
+![Avatar for TOKEN](https://avatar.vercel.sh/TOKEN.svg?size=30)
 
 ### Add Initials
 
@@ -70,7 +70,7 @@ Add the `text` parameter:
 <Avatar token="TOKEN" text="EU"/>
 ```
 
-![Avatar for rauchg](https://avatar.vercel.sh/rauchg.svg?text=EU)
+![Avatar for TOKEN](https://avatar.vercel.sh/TOKEN.svg?text=EU)
 
 ---
 

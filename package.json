@@ -1,6 +1,6 @@
 {
   "name": "vue-avatar-gradient",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Generate beautiful gradient avatars for your Vue application.",
   "main": "dist/avatar.umd.js",
   "module": "dist/avatar.es.js",
