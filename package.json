@@ -27,6 +27,7 @@
     "registry": "https://registry.npmjs.org/",
     "access": "public"
   },
+  "types": "index.d.ts",
   "author": "Adam Coquelet",
   "license": "MIT",
   "peerDependencies": {
