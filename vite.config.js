@@ -6,8 +6,8 @@ export default defineConfig({
     build: {
         lib: {
             entry: 'src/index.js',
-            name: 'AvatarGradient',
-            fileName: (format) => `avatar-gradient.${format}.js`
+            name: 'Avatar',
+            fileName: (format) => `avatar.${format}.js`
         },
         rollupOptions: {
             external: ['vue', 'tinycolor2'],

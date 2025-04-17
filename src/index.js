@@ -1,9 +1,9 @@
-import AvatarGradient from './AvatarGradient.vue'
+import Avatar from './Avatar.vue'
 
 // Auto-install when included via script tag
-AvatarGradient.install = (app) => {
-  app.component('AvatarGradient', AvatarGradient)
+Avatar.install = (app) => {
+  app.component('Avatar', Avatar)
 }
 
-export default AvatarGradient
-export { AvatarGradient }
+export default Avatar
+export { Avatar }
