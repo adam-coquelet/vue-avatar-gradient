@@ -10,11 +10,11 @@ export default defineConfig({
             fileName: (format) => `avatar.${format}.js`
         },
         rollupOptions: {
-            external: ['vue', 'tinycolor2'],
+            external: ['vue'],
             output: {
+                exports: 'named',
                 globals: {
-                    vue: 'Vue',
-                    tinycolor2: 'tinycolor'
+                    vue: 'Vue'
                 }
             }
         }

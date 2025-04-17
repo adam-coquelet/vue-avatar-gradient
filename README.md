@@ -23,9 +23,9 @@ Inspired by Vercel Avatar.
 Install the package and its peer dependency:
 
 ```bash
-npm install vue-avatar-gradient tinycolor2
+npm install vue-avatar-gradient
 # or
-yarn add vue-avatar-gradient tinycolor2
+yarn add vue-avatar-gradient
 ```
 
 ---
