@@ -1,5 +1,5 @@
 
-# Vue Avatar Gradient ! [](https://avatar.vercel.sh/rauchg?size=20) ![](https://avatar.vercel.sh/leerob?size=20) ![](https://avatar.vercel.sh/vercel?size=20) ![](https://avatar.vercel.sh/party?size=20) ![](https://avatar.vercel.sh/edge?size=20)
+# Vue Avatar Gradient ![](https://avatar.vercel.sh/rauchg?size=20) ![](https://avatar.vercel.sh/leerob?size=20) ![](https://avatar.vercel.sh/vercel?size=20) ![](https://avatar.vercel.sh/party?size=20) ![](https://avatar.vercel.sh/edge?size=20)
 
 Generate beautiful gradient avatars for your Vue application.
 
