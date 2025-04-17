@@ -104,7 +104,7 @@ Add the `text` parameter:
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check [issues](https://github.com/adamcoquelet/vue-avatar-gradient/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check [issues](https://github.com/adam-coquelet/vue-avatar-gradient/issues).
 
 ---
 
